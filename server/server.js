@@ -15,7 +15,7 @@ import { startReminderJob } from './jobs/reminders.js';
 
 const app = express();
 app.use(cors({
-  origin: 'https://skill-track-employee-training-and-c.vercel.app',
+  origin: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
